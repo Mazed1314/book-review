@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 const Book = ({ book }) => {
   const { bookName, author, category, rating, tags, image } = book;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl border">
       <figure className="p-4 ">
         <img
           className="rounded-lg w-full h-[300px] md:h-[400px]"
@@ -39,6 +40,9 @@ const Book = ({ book }) => {
       </div>
     </div>
   );
+};
+Book.propTypes = {
+  book: PropTypes.object.isRequired,
 };
 
 export default Book;

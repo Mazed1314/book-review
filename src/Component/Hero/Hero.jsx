@@ -3,7 +3,7 @@ const Hero = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around w-full">
         <img
-          src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+          src="/public/Images/51elPu8mILL.jpg"
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>

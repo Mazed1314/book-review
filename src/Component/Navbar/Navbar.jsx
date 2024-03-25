@@ -33,17 +33,51 @@ const Navbar = () => {
               <li>
                 <a>Sign Up</a>
               </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <NavLink
+                to="/"
+                className={(isActive) => {
+                  isActive ? "text-green-950 font-bold" : "font-bold";
+                }}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/listedBook"
+                className={(isActive) => {
+                  isActive ? "text-green-950 font-bold" : "font-bold";
+                }}
+              >
+                Listed Books
+              </NavLink>
+              <NavLink
+                to="/pagesToRead"
+                className={(isActive) => {
+                  isActive ? "text-green-950 font-bold" : "font-bold";
+                }}
+              >
+                Pages to Read
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={(isActive) => {
+                  isActive ? "text-green-950 font-bold" : "font-bold";
+                }}
+              >
+                About Us
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={(isActive) => {
+                  isActive ? "text-green-950 font-bold" : "font-bold";
+                }}
+              >
+                Contact Us
+              </NavLink>
             </ul>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 flex gap-3">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1 flex gap-5">
             <NavLink
               to="/"
               className={(isActive) => {
@@ -53,12 +87,36 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
+              to="/listedBook"
+              className={(isActive) => {
+                isActive ? "text-green-950 font-bold" : "font-bold";
+              }}
+            >
+              Listed Books
+            </NavLink>
+            <NavLink
+              to="/pagesToRead"
+              className={(isActive) => {
+                isActive ? "text-green-950 font-bold" : "font-bold";
+              }}
+            >
+              Pages to Read
+            </NavLink>
+            <NavLink
               to="/about"
               className={(isActive) => {
                 isActive ? "text-green-950 font-bold" : "font-bold";
               }}
             >
               About Us
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={(isActive) => {
+                isActive ? "text-green-950 font-bold" : "font-bold";
+              }}
+            >
+              Contact Us
             </NavLink>
           </ul>
         </div>

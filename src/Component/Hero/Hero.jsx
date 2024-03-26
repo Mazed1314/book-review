@@ -9,7 +9,7 @@ const Hero = () => {
         />
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 md:pr-12">
-            Most populer and most read book
+            Most populer and most read books
           </h1>
 
           <Link

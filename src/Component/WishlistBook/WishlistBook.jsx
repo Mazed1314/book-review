@@ -1,8 +1,23 @@
 import ListedBookPage from "../Page/ListedBook/ListedBookPage";
+import { useLoaderData } from "react-router-dom";
+import { getBooks } from "../Utils";
+import { useEffect, useState } from "react";
 const WishlistBook = () => {
+  const books = useLoaderData();
+
+  const [addWishlist, setAddWishlist] = useState([]);
+
+  useEffect(() => {
+    const getbook = getBooks();
+    if (books.length > 0) {
+      const booksStored = books.filter((book) => getbook.includes(book.bookId));
+      setAddWishlist(booksStored);
+    }
+  }, [books]);
   return (
     <div>
       <ListedBookPage></ListedBookPage>
+      <h2>{addWishlist.length}</h2>
       <div className="card card-side bg-base-100 border rounded-lg flex flex-col md:flex-row mx-2 my-6">
         <figure className="rounded-lg p-4">
           <img

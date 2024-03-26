@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { useLoaderData, useParams } from "react-router-dom";
+// import toast from "react-hot-toast";
+import { saveBook } from "../Utils";
 
 const BookDetails = () => {
   const books = useLoaderData();
 
-  // console.log(alldata);
   const { bookId } = useParams();
-  // console.log(bookId);
   const book = books.find((b) => b.bookId == bookId);
   const {
     bookName,
@@ -20,6 +20,10 @@ const BookDetails = () => {
     review,
     rating,
   } = book;
+
+  const handleWishlist = () => {
+    saveBook(book);
+  };
   return (
     <>
       <h2 className="text-3xl font-bold py-8 text-center bg-gray-50 my-4 rounded-lg">
@@ -94,7 +98,12 @@ const BookDetails = () => {
           </div>
           <div className="card-actions">
             <button className="btn bg-sky-400 text-white">Read</button>
-            <button className="btn bg-green-400 text-white">Whish List</button>
+            <button
+              onClick={handleWishlist}
+              className="btn bg-green-400 text-white"
+            >
+              Whish List
+            </button>
           </div>
         </div>
       </div>

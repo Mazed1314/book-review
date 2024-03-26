@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 md:flex justify-between w-full">
+    <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
       <a className="btn btn-ghost text-xl">Book Vibe</a>
       <div className="">
         <div className="navbar-start">

@@ -1,4 +1,9 @@
+import PropTypes from "prop-types";
+import { useParams } from "react-router-dom";
+
 const BookDetails = () => {
+  const { id } = useParams();
+  console.log(id);
   return (
     <div className="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row mx-2">
       <figure className="md:w-5/12 h-[550px] rounded-lg">
@@ -72,6 +77,9 @@ const BookDetails = () => {
       </div>
     </div>
   );
+};
+BookDetails.propTypes = {
+  book: PropTypes.object.isRequired,
 };
 
 export default BookDetails;

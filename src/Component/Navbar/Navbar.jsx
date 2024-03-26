@@ -79,42 +79,52 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 flex gap-5">
             <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  : "font-bold"
+              }
               to="/"
-              className={(isActive) => {
-                isActive ? "text-green-950 font-bold" : "font-bold";
-              }}
             >
               Home
             </NavLink>
             <NavLink
-              to="/listedBook"
-              className={(isActive) => {
-                isActive ? "text-green-950 font-bold" : "font-bold";
-              }}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  : "font-bold"
+              }
+              to="/listed-book"
             >
               Listed Books
             </NavLink>
             <NavLink
-              to="/pagesToRead"
-              className={(isActive) => {
-                isActive ? "text-green-950 font-bold" : "font-bold";
-              }}
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  : "font-bold"
+              }
+              to="/pages-to-read"
             >
               Pages to Read
             </NavLink>
             <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  : "font-bold"
+              }
               to="/about"
-              className={(isActive) => {
-                isActive ? "text-green-950 font-bold" : "font-bold";
-              }}
             >
               About Us
             </NavLink>
             <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  : "font-bold"
+              }
               to="/contact"
-              className={(isActive) => {
-                isActive ? "text-green-950 font-bold" : "font-bold";
-              }}
             >
               Contact Us
             </NavLink>

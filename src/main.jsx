@@ -9,6 +9,8 @@ import ErrorPage from "./Component/ErrorPage";
 import BookDetails from "./Component/BookDetails/BookDetails.jsx";
 import PagesToRead from "./Component/PagesToRead/PagesToRead.jsx";
 import Contact from "./Component/Contact/Contact.jsx";
+// import ListedBookPage from "./Component/Page/ListedBook/ListedBookPage.jsx";
+import ListedBook from "./Component/Page/ListedBook/ListedBook.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +45,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/listed-book",
+        element: <ListedBook></ListedBook>,
+      },
+      {
+        path: "/wishlist-book",
         element: <WishlistBook></WishlistBook>,
       },
       {

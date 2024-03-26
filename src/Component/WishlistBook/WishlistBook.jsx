@@ -1,7 +1,9 @@
+import ListedBookPage from "../Page/ListedBook/ListedBookPage";
 const WishlistBook = () => {
   return (
     <div>
-      <div className="card card-side bg-base-100 border rounded-lg flex flex-col md:flex-row mx-2">
+      <ListedBookPage></ListedBookPage>
+      <div className="card card-side bg-base-100 border rounded-lg flex flex-col md:flex-row mx-2 my-6">
         <figure className="rounded-lg p-4">
           <img
             className="rounded-lg w-full"

@@ -3,7 +3,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
-      <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
+      <a className="btn btn-ghost text-2xl font-bold">
+        <img
+          src="/public/Images/book-vibe.png"
+          className="w-[60px] h-auto"
+          alt=""
+        />
+        Book Vibe
+      </a>
       <div className="">
         <div className="navbar-start">
           <div className="dropdown">

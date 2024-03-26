@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero min-h-screen bg-base-200 rounded-lg">
-      <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around w-full">
+      <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around w-full md:px-12">
         <img
           src="/public/Images/pngwing 1.png"
           className="max-w-sm rounded-lg md:shadow-2xl"

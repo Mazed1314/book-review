@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
-      <a className="btn btn-ghost text-xl">Book Vibe</a>
+      <a className="btn btn-ghost text-2xl font-bold">Book Vibe</a>
       <div className="">
         <div className="navbar-start">
           <div className="dropdown">
@@ -34,42 +34,44 @@ const Navbar = () => {
                 <a>Sign Up</a>
               </li>
               <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-green-700  rounded-lg font-bold"
+                    : "font-bold"
+                }
                 to="/"
-                className={(isActive) => {
-                  isActive ? "text-green-950 font-bold" : "font-bold";
-                }}
               >
                 Home
               </NavLink>
               <NavLink
-                to="/listedBook"
-                className={(isActive) => {
-                  isActive ? "text-green-950 font-bold" : "font-bold";
-                }}
+                className={({ isActive }) =>
+                  isActive ? "text-green-700 rounded-lg font-bold" : "font-bold"
+                }
+                to="/listed-book"
               >
                 Listed Books
               </NavLink>
               <NavLink
-                to="/pagesToRead"
-                className={(isActive) => {
-                  isActive ? "text-green-950 font-bold" : "font-bold";
-                }}
+                className={({ isActive }) =>
+                  isActive ? "text-green-700 rounded-lg font-bold" : "font-bold"
+                }
+                to="/pages-to-read"
               >
                 Pages to Read
               </NavLink>
               <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-green-700 rounded-lg font-bold" : "font-bold"
+                }
                 to="/about"
-                className={(isActive) => {
-                  isActive ? "text-green-950 font-bold" : "font-bold";
-                }}
               >
                 About Us
               </NavLink>
               <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-green-700 rounded-lg font-bold" : "font-bold"
+                }
                 to="/contact"
-                className={(isActive) => {
-                  isActive ? "text-green-950 font-bold" : "font-bold";
-                }}
               >
                 Contact Us
               </NavLink>
@@ -132,8 +134,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <a className="btn mr-3">Sign In</a>
-        <a className="btn">Sign Up</a>
+        <a className="btn btn-sm mr-3 bg-green-600 text-white">Sign In</a>
+        <a className="btn btn-sm mr-3 bg-yellow-500 text-white">Sign Up</a>
       </div>
     </div>
   );

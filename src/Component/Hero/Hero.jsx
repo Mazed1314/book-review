@@ -1,17 +1,23 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 rounded-lg">
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around w-full">
         <img
-          src="/public/Images/51elPu8mILL.jpg"
-          className="max-w-sm rounded-lg shadow-2xl"
+          src="/public/Images/pngwing 1.png"
+          className="max-w-sm rounded-lg md:shadow-2xl"
         />
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Box Office News!
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 md:pr-12">
+            Most populer and most read book
           </h1>
 
-          <button className="btn btn-primary">Get Started</button>
+          <Link
+            to="/listed-book"
+            className="btn btn-sm border border-green-600  text-green-700"
+          >
+            View The List
+          </Link>
         </div>
       </div>
     </div>

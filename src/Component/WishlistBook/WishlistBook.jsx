@@ -1,5 +1,6 @@
 import ListedBookPage from "../Page/ListedBook/ListedBookPage";
 // import { useLoaderData } from "react-router-dom";
+
 import { getBooks } from "../Utils";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -18,9 +19,9 @@ const WishlistBook = () => {
       {addWishlist.map((book) => (
         <>
           <div className="card card-side bg-base-100 border rounded-lg flex flex-col md:flex-row mx-2 my-6">
-            <figure className="rounded-lg p-4 m-4 w-4/12 h-auto bg-gray-100">
+            <figure className="rounded-lg p-4 m-4 w-full md:w-4/12 h-auto md:h-[300px] bg-gray-100">
               <img
-                className="rounded-lg w-[250px] h-[300px]"
+                className="w-full md:w-[180px]  md:h-full"
                 src={book.image}
                 alt="Movie"
               />

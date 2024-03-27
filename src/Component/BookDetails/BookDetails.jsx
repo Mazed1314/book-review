@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { useLoaderData, useParams } from "react-router-dom";
 // import toast from "react-hot-toast";
-import { saveBook } from "../Utils";
+import { saveBook, saveReadBook } from "../Utils";
+import { ToastContainer } from "react-toastify";
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -21,6 +22,9 @@ const BookDetails = () => {
     rating,
   } = book;
 
+  const handleReadlist = () => {
+    saveReadBook(book);
+  };
   const handleWishlist = () => {
     saveBook(book);
   };
@@ -97,13 +101,19 @@ const BookDetails = () => {
             </div>
           </div>
           <div className="card-actions">
-            <button className="btn bg-sky-400 text-white">Read</button>
+            <button
+              onClick={handleReadlist}
+              className="btn bg-sky-400 text-white"
+            >
+              Read
+            </button>
             <button
               onClick={handleWishlist}
               className="btn bg-green-400 text-white"
             >
               Whish List
             </button>
+            <ToastContainer />
           </div>
         </div>
       </div>

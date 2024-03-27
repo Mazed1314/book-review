@@ -126,7 +126,7 @@ const About = () => {
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
               <img
-                src="/public/Images/about-1-4-3e73be3e60.jpg"
+                src="/Images/about-1-4-3e73be3e60.jpg"
                 alt=""
                 className="mx-auto rounded-lg shadow-lg dark:bg-gray-500"
               />
@@ -251,7 +251,7 @@ const About = () => {
               </div>
               <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
                 <img
-                  src="/public/Images/about-2-4-d610a094cd.jpg"
+                  src="/Images/about-2-4-d610a094cd.jpg"
                   alt=""
                   className="mx-auto rounded-lg shadow-lg dark:bg-gray-500"
                 />

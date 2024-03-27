@@ -4,11 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
       <a className="btn btn-ghost text-2xl font-bold">
-        <img
-          src="/public/Images/book-vibe.png"
-          className="w-[60px] h-auto"
-          alt=""
-        />
+        <img src="/Images/book-vibe.png" className="w-[60px] h-auto" alt="" />
         Book Vibe
       </a>
       <div className="">
@@ -90,7 +86,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  ? "text-green-700 border border-green-600 px-2 rounded-lg font-bold"
                   : "font-bold"
               }
               to="/"
@@ -100,7 +96,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  ? "text-green-700 border border-green-600 px-2 rounded-lg font-bold"
                   : "font-bold"
               }
               to="/listed-book"
@@ -110,7 +106,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  ? "text-green-700 border border-green-600 px-2 rounded-lg font-bold"
                   : "font-bold"
               }
               to="/pages-to-read"
@@ -120,7 +116,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  ? "text-green-700 border border-green-600 px-2 rounded-lg font-bold"
                   : "font-bold"
               }
               to="/about"
@@ -130,7 +126,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "text-green-700 border-2 border-green-600 px-2 rounded-lg font-bold"
+                  ? "text-green-700 border border-green-600 px-2 rounded-lg font-bold"
                   : "font-bold"
               }
               to="/contact"

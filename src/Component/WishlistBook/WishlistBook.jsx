@@ -1,12 +1,8 @@
 import ListedBookPage from "../Page/ListedBook/ListedBookPage";
-// import { useLoaderData } from "react-router-dom";
-
 import { getBooks } from "../Utils";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 const WishlistBook = () => {
-  // const books = useLoaderData();
-
   const [addWishlist, setAddWishlist] = useState([]);
 
   useEffect(() => {

@@ -5,7 +5,8 @@ const Navbar = () => {
     <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
       <a className="btn btn-ghost text-2xl font-bold">
         <img src="/Images/book-vibe.png" className="w-[60px] h-auto" alt="" />
-        Book Vibe
+        Book{" "}
+        <span className="bg-yellow-500 text-white px-2 rounded-lg">Vibe</span>
       </a>
       <div className="">
         <div className="navbar-start">

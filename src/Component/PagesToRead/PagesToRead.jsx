@@ -32,33 +32,44 @@ const PagesToRead = () => {
 
   console.log(addChart);
   return (
-    <div className="w-full mx-auto">
-      <BarChart
-        width={800}
-        height={300}
-        data={addChart}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="bookName" />
-        <YAxis />
-        <Bar
-          dataKey="totalPages"
-          fill="#8884d8"
-          shape={<TriangleBar />}
-          label={{ position: "top" }}
+    <>
+      <h2 className="mt-4 text-center text-2xl font-semibold">
+        Here is your read books chart
+      </h2>
+      <div className="flex justify-center">
+        <p className="pt-2 pb-6 text-center text-lg w-1/2">
+          This chart shows the names of the books you read on the X-axis and the
+          page numbers of the books you read on the Y-axis.
+        </p>
+      </div>
+      <div className="flex justify-center">
+        <BarChart
+          width={800}
+          height={300}
+          data={addChart}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
         >
-          {addChart.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-          ))}
-        </Bar>
-      </BarChart>
-    </div>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="bookName" />
+          <YAxis />
+          <Bar
+            dataKey="totalPages"
+            fill="#8884d8"
+            shape={<TriangleBar />}
+            label={{ position: "top" }}
+          >
+            {addChart.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+            ))}
+          </Bar>
+        </BarChart>
+      </div>
+    </>
   );
 };
 

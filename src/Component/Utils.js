@@ -9,12 +9,15 @@ export const getBooks = () => {
 };
 
 export const saveBook = (book) => {
+  console.log(book);
   let books = getBooks();
-  const isExist = books.find((b) => b.id === book.id);
+  console.log(books);
+  const isExist = books.find((b) => b.bookId === book.bookId);
   if (isExist) {
     return toast.error("Already Add!");
   }
   books.push(book);
+  //
   localStorage.setItem("books", JSON.stringify(books));
   toast.success("Book Add Successfully!");
 };

@@ -27,6 +27,8 @@ const BookDetails = () => {
   };
   const handleWishlist = () => {
     saveBook(book);
+
+    // console.log(getReadBooks());
   };
   return (
     <>

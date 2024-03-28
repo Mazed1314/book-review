@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
-    <div className="hero  bg-base-200 rounded-lg">
+    <div className="hero bg-base-200 rounded-lg">
       <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around w-full md:px-12">
         <img
           src="/Images/pngwing 1.png"

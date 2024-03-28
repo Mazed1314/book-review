@@ -30,9 +30,8 @@ const PagesToRead = () => {
     setAddChart(getBook);
   }, []);
 
-  console.log(addChart);
   return (
-    <>
+    <div className="bg-gray-100 rounded-lg py-3">
       <h2 className="mt-4 text-center text-2xl font-semibold">
         Here is your read books chart
       </h2>
@@ -69,7 +68,7 @@ const PagesToRead = () => {
           </Bar>
         </BarChart>
       </div>
-    </>
+    </div>
   );
 };
 

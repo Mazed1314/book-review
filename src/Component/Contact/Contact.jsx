@@ -2,6 +2,11 @@ const Contact = () => {
   return (
     <div>
       <section className="py-6 bg-gray-100 text-gray-900 rounded-lg">
+        <h2 className="font-semibold md:w-1/2 mx-auto mt-4 mb-8 px-4 text-center text-gray-700">
+          Thank you for visiting our website! We are here to assist you with any
+          questions, concerns, or feedback you may have. Please feel free to
+          reach out to us using the contact information provided below.
+        </h2>
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
             <h1 className="text-4xl font-bold">Get in touch</h1>

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const ListedBookPage = () => {
   return (
-    <div>
+    <div className="px-2">
       <h2 className="text-3xl font-bold py-8 text-center bg-gray-100 rounded-lg">
         Listed Books
       </h2>
@@ -20,10 +20,13 @@ const ListedBookPage = () => {
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a>Rating</a>
             </li>
             <li>
-              <a>Item 2</a>
+              <a>Number of pages</a>
+            </li>
+            <li>
+              <a>Publishing year</a>
             </li>
           </ul>
         </div>

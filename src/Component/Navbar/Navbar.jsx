@@ -2,13 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 md:flex justify-between w-full mt-2 mb-6">
-      <a className="btn btn-ghost text-2xl font-bold">
-        <img src="/Images/book-vibe.png" className="w-[60px] h-auto" alt="" />
-        Book
-        <span className="bg-yellow-500 text-white px-2 rounded-lg">Vibe</span>
-      </a>
-      <div className="">
+    <>
+      <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,9 +76,20 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
+          <a className="btn btn-ghost text-xl">
+            <img
+              src="/Images/book-vibe.png"
+              className="w-[60px] h-auto"
+              alt=""
+            />
+            Book
+            <span className="bg-yellow-500 text-white px-2 rounded-lg">
+              Vibe
+            </span>
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 flex gap-5">
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 md:flex gap-8">
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -136,12 +142,16 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
+        <div className="navbar-end">
+          <a className="btn hidden md:block md:btn-sm mr-3 bg-green-600 text-white p-2">
+            Sign In
+          </a>
+          <a className="btn hidden md:block md:btn-sm mr-3 bg-yellow-500 text-white p-2">
+            Sign Up
+          </a>
+        </div>
       </div>
-      <div className="hidden lg:block">
-        <a className="btn btn-sm mr-3 bg-green-600 text-white">Sign In</a>
-        <a className="btn btn-sm mr-3 bg-yellow-500 text-white">Sign Up</a>
-      </div>
-    </div>
+    </>
   );
 };
 

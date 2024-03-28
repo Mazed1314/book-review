@@ -24,7 +24,10 @@ const ErrorPage = () => {
             </svg>
           </p>
           <h1 className="mt-3 text-2xl font-semibold text-gray-800  md:text-3xl">
-            Something Went Wrong!
+            404 Error
+          </h1>
+          <h1 className="mt-3 text-2xl font-semibold text-gray-800  md:text-3xl">
+            Something Went Wrong! page not found
           </h1>
           <p className="mt-4 text-gray-500 ">Here are some helpful links:</p>
 
@@ -50,8 +53,13 @@ const ErrorPage = () => {
 
               <span>Go back</span>
             </button>
-
-            <button onClick={() => navigate("/")}>Take Me Home</button>
+            or
+            <button
+              className="bg-white border px-2 rounded-lg"
+              onClick={() => navigate("/")}
+            >
+              Go Home
+            </button>
           </div>
         </div>
       </div>

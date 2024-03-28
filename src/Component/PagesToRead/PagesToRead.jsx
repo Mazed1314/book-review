@@ -37,7 +37,7 @@ const PagesToRead = () => {
         Here is your read books chart
       </h2>
       <div className="flex justify-center">
-        <p className="pt-2 pb-6 text-center text-lg w-1/2">
+        <p className="pt-2 pb-6 text-center text-lg md:w-1/2">
           This chart shows the names of the books you read on the X-axis and the
           page numbers of the books you read on the Y-axis.
         </p>
